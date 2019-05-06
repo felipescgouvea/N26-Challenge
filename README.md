@@ -6,7 +6,7 @@ The Mobile Bank, The world at your fingertips
 
 # Challenge 1!
 
-  - Contains the funcionality to send emails to it's customer once a day according to customer country
+  - Contains the functionality to send emails to it's customer once a day according to customer country
   - Languages are allowed by their ISO 693-1 Code (Assuming only "en" and "de")
   - survey_date__c field are read-only by default, being modified only by services/system
   - to schedule the action just go to [Scheduler Script](https://github.com/felipescgouvea/N26-Challenge/blob/master/first-challenge/apex-scripts/SchedulerScript.cls) and run content on [anonymous console](https://help.salesforce.com/articleView?id=code_dev_console_execute_anonymous.htm&type=5) 
