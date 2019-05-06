@@ -37,7 +37,7 @@ global class SurveySend implements Database.Batchable<sObject>, Schedulable {
 
 	global void execute(Database.BatchableContext BC, List<sObject> scope)	{
 		try{
-			//Messaging.reserveSingleEmailCapacity(scope.size());
+			Messaging.reserveSingleEmailCapacity(scope.size());
 			new SurveyService().sendSurveysTo(scope);
 		}catch(HandledException e){
 			system.debug(e.getCause());
