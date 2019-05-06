@@ -21,12 +21,6 @@ The Mobile Bank, The world at your fingertips
 > Daily Limit on email sent is avoided by [Survey Send]() where it reserves at least scope size limit to proceed
 
 
-#
-#
-#
-#
-#
-
 # Challenge 2!
   - ***ProductInformation*** lightning component is visible on [Case Record Page](https://github.com/felipescgouvea/N26-Challenge/blob/master/second-challenge/src/FlexiPage/Case_Record_Page)
   - Find customer's product based on ***Product__c*** and ***Home_Country__c***
