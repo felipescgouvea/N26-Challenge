@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>SurveyEmailHelper</members>
+        <members>SurveyEmailHelperTest</members>
+        <members>SurveyRecipient</members>
+        <members>SurveyRecipientTest</members>
+        <members>SurveySend</members>
+        <members>SurveySendTest</members>
+        <members>SurveyService</members>
+        <members>SurveyServiceTest</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Contact.Language__c</members>
+        <members>Contact.Survey_Date__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Survey_Email_Templates</members>
+        <members>Survey_Email_Templates/Survey_Invite_de</members>
+        <members>Survey_Email_Templates/Survey_Invite_en</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>GlobalValueSet</name>
+    </types>
+    <version>42.0</version>
+</Package>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>45.0</apiVersion>
+    <available>true</available>
+    <description>Contains invite to customer answer a survey</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Survey Invite DE</name>
+    <packageVersions>
+        <majorNumber>2</majorNumber>
+        <minorNumber>200</minorNumber>
+        <namespace>scormanywhere</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>18</minorNumber>
+        <namespace>sf_chttr_apps</namespace>
+    </packageVersions>
+    <style>none</style>
+    <subject>EN</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

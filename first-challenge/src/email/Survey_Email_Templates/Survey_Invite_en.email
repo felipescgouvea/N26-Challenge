@@ -1,0 +1,36 @@
+<messaging:emailTemplate subject="N26 Bank - Survey" recipientType="Contact" >
+	<messaging:htmlEmailBody>
+		<html>
+
+			<body>
+				<span>
+					<p style="font-size: 18px; font-family: Arial Unicode MS;">
+						Hey {!recipient.firstName}, please fill out our survey:
+						<a style="color: #31cec1;font-weight: bold;" href="http://n26.com/survey/{!recipient.id}">http://n26.com/survey/{!recipient.id}</a>
+					</p>
+
+					<p>
+						<span style="font-size: 18px;font-family: Arial Unicode MS;display: block;">
+							Felipe Gouvea,
+						</span>
+						<span style="font-size: 18px;font-family: Arial Unicode MS;display: block;">
+							System Engineer
+						</span>
+						<span style="font-size: 18px;font-family: Arial Unicode MS;display: block;">
+							<apex:image  id="Logo" value="https://i.imgur.com/Ees25I1.png" width="100" height="100" />
+						</span>
+					</p>
+					
+
+
+				</span>
+				
+				 
+				
+
+				
+			</body>
+		</html>
+	</messaging:htmlEmailBody>
+
+</messaging:emailTemplate>
