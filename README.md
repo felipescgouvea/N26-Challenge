@@ -19,8 +19,8 @@ The Mobile Bank, The world at your fingertips
 
 ### Details
 > Daily Limit on email sent is avoided by [Survey Send]() where it reserves at least scope size limit to proceed
-#
-#
+
+
 #
 #
 #
@@ -29,7 +29,7 @@ The Mobile Bank, The world at your fingertips
 
 # Challenge 2!
   - ***ProductInformation*** lightning component is visible on [Case Record Page](https://github.com/felipescgouvea/N26-Challenge/blob/master/second-challenge/src/FlexiPage/Case_Record_Page)
-  - Find customer's product based on [Product__c]() and [Home_Country__c]()
+  - Find customer's product based on ***Product__c*** and ***Home_Country__c***
   - Contains a price engine calculator to determine product's fee
   
 ### Demonstration
@@ -40,15 +40,20 @@ The Mobile Bank, The world at your fingertips
 
 ### Details
 > **Accountable** interface determine what would be the services offered by products in general.(e.g.: Monthly Cost)
+
 > **Command** interface implements the pattern, encapsulating price rules
+
 > **ProductCategoryAbstract** defines a behaviour to calculate product prices taking product category in account (e.g.: Standard)
+
 > To determine which parameters will be used to calculate prices just go to [ProductDetailWrapper]()
 >
 
 
 ### Principles
 > ***Oriented-Object Programming*** (encapsulation, abstraction, inheritance, polymorphism)
+
 > ***Open/Closed principle*** (Open for extension, closed for change)
+
 > ***Design Patterns*** (Command)
 
 ### Installation
