@@ -8,15 +8,13 @@
 --
 -- Date              Name               Version                   
 ----------------------------------------------------------------------------------------------
--- 05/03/2019       Felipe Gouvea      1.0         
+-- 05/03/2019        Felipe Gouvea      1.0         
 ----------------------------------------------------------------------------------------------
 */
 
 public class SurveyEmailHelper {
 
 	public static final string DEFAULT_EMAIL_FOLDER = 'Survey Email Templates';
-
-	public static string DEFAULT_SUBJECT = 'N26 Bank Survey';
 
 	public static Boolean ALL_EMAILS_OR_NOTHING = FALSE;
 
@@ -27,19 +25,16 @@ public class SurveyEmailHelper {
 	public static void sendEmails(List<SurveyRecipient> recipients){
 		SurveyEmailHelper.buildTemplatesMap();
 
-		
 		for(SurveyRecipient recipient: recipients){
 			try{
 				EmailTemplate template = SurveyEmailHelper.templates.get(recipient.languageIsoCode.toUpperCase());
-	
-	
+				
 				Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
 				message.toAddresses = new String[] { recipient.email };
-				//message.subject = SurveyEmailHelper.DEFAULT_SUBJECT;
 				message.templateId = template.Id;
 				message.TargetObjectId = recipient.recipient.Id;
 				message.setTreatTargetObjectAsRecipient(true);
-	
+
 				SurveyEmailHelper.messages.add(message);
 			}
 			catch(NullPointerException ex){
@@ -61,17 +56,11 @@ public class SurveyEmailHelper {
 					}
 
 			}
-
-
 			database.update(contacts);
 		}
-
-
-
 	}
 
-
-	public static void buildTemplatesMap(){
+	private static void buildTemplatesMap(){
 		templates = new Map<string, EmailTemplate>();
 		List<EmailTemplate> templatesList =[SELECT  Subject, Body from EmailTemplate where Folder.Name =: SurveyEmailHelper.DEFAULT_EMAIL_FOLDER];
 		for( EmailTemplate template : templatesList) templates.put(template.Subject.toUpperCase(), template);

@@ -8,7 +8,7 @@
 --
 -- Date              Name               Version                   
 ----------------------------------------------------------------------------------------------
---       Felipe Gouvea      1.0         
+-- 05/05/2019        Felipe Gouvea      1.0         
 ----------------------------------------------------------------------------------------------
 */
 
@@ -45,25 +45,18 @@ private class SurveySendTest
 	@isTest
 	static void testBatchAction()
 	{
-		// Given
-
-
 		// When
 		Test.startTest();
 		
 		SurveySend surveySend = new SurveySend();
 		Id batchId = Database.executeBatch(surveySend);
 		
-		//System.assertEquals(1, Limits.getEmailInvocations(), 'Messaging.sendEmail should be invoked only one time to send all emails');
-
 		Test.stopTest();
-
 
 		// Then
 		string emptyId = '000000000000000';
 		System.assertNotEquals(emptyId, batchId);
 		System.assert(true);
-		
 	}
 
 
@@ -82,11 +75,7 @@ private class SurveySendTest
 			       NextFireTime
 			       FROM CronTrigger WHERE id = :jobId];
 	
-
-			
 		Test.stopTest();
-
-
 
 		// Then
 		System.assertEquals(CRON_EXP,  ct.CronExpression);
