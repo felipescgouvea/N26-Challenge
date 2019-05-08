@@ -18,7 +18,7 @@ The Mobile Bank, The world at your fingertips
 ![](https://i.imgur.com/QSeJIeX.png)
 
 ### Details
-> Daily Limit on email sent is avoided by [Survey Send](https://github.com/felipescgouvea/N26-Challenge/blob/master/second-challenge/src/classes/SurveySend.cls) where it reserves at least scope size limit to proceed
+> Daily Limit on email sent is avoided by [Survey Send](https://github.com/felipescgouvea/N26-Challenge/blob/master/first-challenge/src/classes/SurveySend.cls) where it reserves at least scope size limit to proceed
 
 
 # Challenge 2!
