@@ -39,7 +39,7 @@ The Mobile Bank, The world at your fingertips
 
 > **ProductCategoryAbstract** defines a behaviour to calculate product prices taking product category in account (e.g.: Standard)
 
-> To determine which parameters will be used to calculate prices just go to [ProductDetailWrapper](https://github.com/felipescgouvea/N26-Challenge/blob/master/second-challenge/src/classes/ProductDetailWrapper.cls)
+> To determine which parameters will be used to calculate prices just go to [ProductDetailWrapper](https://github.com/felipescgouvea/N26-Challenge/blob/master/first-challenge/src/classes/ProductDetailWrapper.cls)
 >
 
 
