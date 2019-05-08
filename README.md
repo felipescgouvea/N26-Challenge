@@ -18,7 +18,7 @@ The Mobile Bank, The world at your fingertips
 ![](https://i.imgur.com/QSeJIeX.png)
 
 ### Details
-> Daily Limit on email sent is avoided by [Survey Send]() where it reserves at least scope size limit to proceed
+> Daily Limit on email sent is avoided by [Survey Send](https://github.com/felipescgouvea/N26-Challenge/blob/master/second-challenge/src/classes/SurveySend.cls) where it reserves at least scope size limit to proceed
 
 
 # Challenge 2!
@@ -39,7 +39,7 @@ The Mobile Bank, The world at your fingertips
 
 > **ProductCategoryAbstract** defines a behaviour to calculate product prices taking product category in account (e.g.: Standard)
 
-> To determine which parameters will be used to calculate prices just go to [ProductDetailWrapper]()
+> To determine which parameters will be used to calculate prices just go to [ProductDetailWrapper](https://github.com/felipescgouvea/N26-Challenge/blob/master/second-challenge/src/classes/ProductDetailWrapper.cls)
 >
 
 
